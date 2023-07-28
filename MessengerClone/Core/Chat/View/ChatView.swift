@@ -9,16 +9,22 @@ import SwiftUI
 
 struct ChatView: View {
     
-    @State private var messageText = ""
+    @StateObject var viewModel: ChatViewModel
+    let user: User
+    
+    init(user: User){
+        self.user = user
+        self._viewModel = StateObject(wrappedValue: ChatViewModel(user: user))
+    }
     
     var body: some View {
         VStack{
             ScrollView{
                 VStack{
-                    CircularProfileImageView(user: User.MOCK_USER, size: .xLarge)
+                    CircularProfileImageView(user: user, size: .xLarge)
                     
                     VStack(spacing: 4){
-                        Text("Bruce Wayne")
+                        Text(user.fullName)
                             .font(.title3)
                             .fontWeight(.semibold)
                         Text("Messenger")
@@ -36,7 +42,7 @@ struct ChatView: View {
             Spacer()
             
             ZStack(alignment: .trailing){
-                TextField("Message...", text: $messageText, axis: .vertical)
+                TextField("Message...", text: $viewModel.messageText, axis: .vertical)
                     .padding(12)
                     .padding(.trailing, 48)
                     .background(Color(.systemGroupedBackground))
@@ -44,7 +50,8 @@ struct ChatView: View {
                     .font(.subheadline)
                 
                 Button{
-                    print("Send message")
+                    viewModel.sendMessage()
+                    viewModel.messageText = ""
                 } label: {
                     Text("Send")
                         .fontWeight(.semibold)
@@ -57,5 +64,5 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView()
+    ChatView(user: User.MOCK_USER)
 }
