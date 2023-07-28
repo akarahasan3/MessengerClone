@@ -10,7 +10,7 @@ import PhotosUI
 
 struct ProfileView: View {
     @StateObject var viewModel = ProfileViewModel()
-    let user: User
+    var user: User?
     
     var body: some View {
         VStack{
@@ -27,7 +27,7 @@ struct ProfileView: View {
                     }
                 }
                 
-                Text(user.fullName)
+                Text(user?.fullName ?? "")
                     .font(.title2)
                     .fontWeight(.semibold)
             }
