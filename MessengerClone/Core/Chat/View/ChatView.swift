@@ -33,9 +33,9 @@ struct ChatView: View {
                     }
                 }
                 
-                ForEach(0 ... 15, id: \.self){
+                ForEach(viewModel.messages){
                     message in
-                    ChatMessageCell(isFromCurrentUser: Bool.random())
+                    ChatMessageCell(message: message)
                 }
             }
             

@@ -25,6 +25,7 @@
 		F56ACE1C2A6DB2C8000D0CFE /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACE1B2A6DB2C8000D0CFE /* InboxView.swift */; };
 		F56ACE1F2A6DC3B1000D0CFE /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACE1E2A6DC3B1000D0CFE /* ActiveNowView.swift */; };
 		F56ACE212A6DC5AF000D0CFE /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACE202A6DC5AF000D0CFE /* InboxRowView.swift */; };
+		F57EE0062A79793B001695FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EE0052A79793B001695FE /* Constants.swift */; };
 		F5B20E302A70570300345E85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E2F2A70570300345E85 /* FirebaseAuth */; };
 		F5B20E322A70570300345E85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E312A70570300345E85 /* FirebaseFirestore */; };
 		F5B20E342A70570300345E85 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E332A70570300345E85 /* FirebaseFirestoreSwift */; };
@@ -62,6 +63,7 @@
 		F56ACE1B2A6DB2C8000D0CFE /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		F56ACE1E2A6DC3B1000D0CFE /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		F56ACE202A6DC5AF000D0CFE /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		F57EE0052A79793B001695FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5D814E92A704DFA000139E1 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		F5D814EB2A70510F000139E1 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		F5D814ED2A705487000139E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		F56ACDFF2A6DA163000D0CFE /* MessengerClone */ = {
 			isa = PBXGroup;
 			children = (
+				F57EE0042A797930001695FE /* Utils */,
 				F56ACE122A6DA1C1000D0CFE /* App */,
 				F56ACE112A6DA1BE000D0CFE /* Core */,
 				F56ACE102A6DA1BC000D0CFE /* Extensions */,
@@ -305,6 +308,14 @@
 				F56ACE1E2A6DC3B1000D0CFE /* ActiveNowView.swift */,
 			);
 			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		F57EE0042A797930001695FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F57EE0052A79793B001695FE /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F5FA7A7A2A73FEB50081FE9C /* ViewModel */ = {
@@ -464,6 +475,7 @@
 				F5FA7A772A73FA540081FE9C /* Message.swift in Sources */,
 				F50B4CC92A6FC60E005641AB /* SettingsOptionsViewModel.swift in Sources */,
 				F56ACE192A6DAA92000D0CFE /* RegistrationView.swift in Sources */,
+				F57EE0062A79793B001695FE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
