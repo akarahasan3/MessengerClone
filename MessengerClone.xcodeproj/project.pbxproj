@@ -30,6 +30,8 @@
 		F5B20E322A70570300345E85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E312A70570300345E85 /* FirebaseFirestore */; };
 		F5B20E342A70570300345E85 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E332A70570300345E85 /* FirebaseFirestoreSwift */; };
 		F5B20E362A70570300345E85 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F5B20E352A70570300345E85 /* FirebaseStorage */; };
+		F5CE2EC92A7C283B0053CC18 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE2EC82A7C283B0053CC18 /* InboxService.swift */; };
+		F5CE2ECB2A7C34020053CC18 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CE2ECA2A7C34020053CC18 /* Date.swift */; };
 		F5D814EA2A704DFA000139E1 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D814E92A704DFA000139E1 /* ChatMessageCell.swift */; };
 		F5D814EC2A70510F000139E1 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D814EB2A70510F000139E1 /* ChatBubble.swift */; };
 		F5D814EE2A705487000139E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D814ED2A705487000139E1 /* GoogleService-Info.plist */; };
@@ -64,6 +66,8 @@
 		F56ACE1E2A6DC3B1000D0CFE /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		F56ACE202A6DC5AF000D0CFE /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		F57EE0052A79793B001695FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5CE2EC82A7C283B0053CC18 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		F5CE2ECA2A7C34020053CC18 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F5D814E92A704DFA000139E1 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		F5D814EB2A70510F000139E1 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		F5D814ED2A705487000139E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			children = (
 				F5FCCDA12A71B2CA00830FDF /* UserService.swift */,
 				F5FA7A782A73FB7B0081FE9C /* MessageService.swift */,
+				F5CE2EC82A7C283B0053CC18 /* InboxService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 		F56ACE102A6DA1BC000D0CFE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F5CE2ECA2A7C34020053CC18 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -454,11 +460,13 @@
 				F559EC9E2A72A85100E9170A /* InboxViewModel.swift in Sources */,
 				F5FCCD9A2A71A2C900830FDF /* RegistrationViewModel.swift in Sources */,
 				F50B4CC72A6FC29B005641AB /* ProfileView.swift in Sources */,
+				F5CE2ECB2A7C34020053CC18 /* Date.swift in Sources */,
 				F54242302A6EE98D0038014D /* NewMessageView.swift in Sources */,
 				F5FCCDA02A71A84200830FDF /* ContentViewModel.swift in Sources */,
 				F56ACE172A6DA2BF000D0CFE /* LoginView.swift in Sources */,
 				F50B4CD32A704ADA005641AB /* ChatView.swift in Sources */,
 				F5FCCD9C2A71A2E800830FDF /* AuthService.swift in Sources */,
+				F5CE2EC92A7C283B0053CC18 /* InboxService.swift in Sources */,
 				F56ACE032A6DA163000D0CFE /* ContentView.swift in Sources */,
 				F5D814EA2A704DFA000139E1 /* ChatMessageCell.swift in Sources */,
 				F5D814EC2A70510F000139E1 /* ChatBubble.swift in Sources */,
